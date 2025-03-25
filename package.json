@@ -1,0 +1,17 @@
+{
+  "name": "android-developer-portfolio",
+  "version": "1.0.0",
+  "description": "Android Developer Portfolio Website",
+  "main": "script.js",
+  "scripts": {
+    "deploy": "firebase deploy",
+    "login": "firebase login",
+    "init": "firebase init",
+    "serve": "firebase serve --only hosting"
+  },
+  "author": "Pathri Narayanan",
+  "license": "MIT",
+  "dependencies": {
+    "firebase-tools": "^12.4.0"
+  }
+} 

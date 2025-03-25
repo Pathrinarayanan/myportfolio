@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Android Developer Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo">
+                    <h1>Android <span>Developer</span></h1>
+                </div>
+                <div class="menu-btn">
+                    <i class="fas fa-bars"></i>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#skills" class="nav-link">Skills</a></li>
+                    <li><a href="#portfolio" class="nav-link">Portfolio</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="hero" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Android Developer</h1>
+                <p>Building innovative mobile applications with a passion for great user experience</p>
+                <div class="hero-buttons">
+                    <a href="#portfolio" class="btn primary-btn">View My Work</a>
+                    <a href="#contact" class="btn secondary-btn">Contact Me</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>I am a passionate Android developer with experience in building modern mobile applications. I have participated in multiple hackathons, completed various professional courses, and worked on numerous projects that have helped me develop a strong skill set in Android development.</p>
+                    <p>My goal is to create apps that not only look great but also provide exceptional user experiences. I am constantly learning new technologies and techniques to stay at the forefront of mobile development.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2 class="section-title">My Skills</h2>
+            <div class="skills-container">
+                <div class="skill-box">
+                    <div class="skill-title">
+                        <i class="fab fa-android"></i>
+                        <h3>Android Development</h3>
+                    </div>
+                    <p>Native Android development with Kotlin and Java</p>
+                </div>
+                <div class="skill-box">
+                    <div class="skill-title">
+                        <i class="fas fa-mobile-alt"></i>
+                        <h3>Mobile UI/UX</h3>
+                    </div>
+                    <p>Creating intuitive and beautiful user interfaces</p>
+                </div>
+                <div class="skill-box">
+                    <div class="skill-title">
+                        <i class="fas fa-database"></i>
+                        <h3>Database Integration</h3>
+                    </div>
+                    <p>SQLite, Room, Firebase, and RESTful APIs</p>
+                </div>
+                <div class="skill-box">
+                    <div class="skill-title">
+                        <i class="fas fa-code"></i>
+                        <h3>Modern Architecture</h3>
+                    </div>
+                    <p>MVVM, Clean Architecture, and Jetpack Compose</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="portfolio" class="portfolio">
+        <div class="container">
+            <h2 class="section-title">My Portfolio</h2>
+            
+            <div class="tabs">
+                <div class="tab-nav">
+                    <button class="tab-btn active" data-tab="projects">Projects</button>
+                    <button class="tab-btn" data-tab="hackathons">Hackathons</button>
+                    <button class="tab-btn" data-tab="courses">Courses</button>
+                    <button class="tab-btn" data-tab="events">Events</button>
+                </div>
+                
+                <div class="tab-content">
+                    <div class="tab-pane active" id="projects">
+                        <div class="portfolio-grid">
+                            <div class="portfolio-item project-clickable" data-project="xrosstalk">
+                                <img src="assets/xrosstalk.png" alt="Xrosstalk" style="height: 250px; width:fit-content">
+                                <div class="item-overlay">
+                                    <h3>Xrosstalk</h3>
+                                    <p>Android Real time Chatting Application with emotion-based features</p>
+                                    <span class="btn">View Details</span>
+                                </div>
+                            </div>
+                            <div class="portfolio-item project-clickable" data-project="fooddelivery">
+                                <img src="assets/soru_time.jpg" alt="Food Delivery App" style="height: 250px; width:100%; object-fit: cover;">
+                                <div class="item-overlay">
+                                    <h3>Full-Stack Food Delivery App</h3>
+                                    <p>Complete food delivery application built with Kotlin and Jetpack Compose</p>
+                                    <span class="btn">View Details</span>
+                                </div>
+                            </div>
+                            <div class="portfolio-item project-clickable" data-project="weatherapp">
+                                <div class="project-screenshot"  style="display: flex; justify-content: center; align-items: center;">
+                                    <img src="https://static.wikia.nocookie.net/ipod/images/d/d6/Weather_iOS_15.png/revision/latest?cb=20220611140027" alt="Weather App Screenshot" style="height: 250px; width:60%; ">
+                                </div>
+                                <div class="item-overlay">
+                                    <h3>Modern Weather App</h3>
+                                    <p>Dynamic weather app with real-time updates and smooth animations</p>
+                                    <span class="btn">View Details</span>
+                                </div>
+                            </div>
+                            <div class="portfolio-item project-clickable" data-project="goaltracker">
+                                <div class="project-screenshot"  style="display: flex; justify-content: center; align-items: center;">
+                                    <img src="assets/goal_logo.png" alt="Goal Tracker App" style="height: 250px; width:100%; ">
+                                </div>
+                                <div class="item-overlay">
+                                    <h3>Goal Tracker App</h3>
+                                    <p>Goal tracking app with daily goals and progress tracking</p>
+                                    <span class="btn">View Details</span>
+                                </div>
+                            </div>
+                            <div class="portfolio-item project-clickable" data-project="reconnect">
+                                <div class="project-screenshot"  style="display: flex; justify-content: center; align-items: center;">
+                                    <img src="assets/reconnect_icon.png" alt="Weather App Screenshot" style="height: 250px; width:80%; ">
+                                </div>
+                                <div class="item-overlay">
+                                    <h3>Reconnect</h3>
+                                    <p>A Tinder-style contact management app to organize and reconnect with meaningful contacts</p>
+                                    <span class="btn">View Details</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="tab-pane" id="hackathons">
+                        <div class="portfolio-grid">
+                            <div class="portfolio-item">
+                                <img src="https://via.placeholder.com/300x200" alt="Hackathon 1">
+                                <div class="item-overlay">
+                                    <h3>Google DevFest 2023</h3>
+                                    <p>Developed a sustainable living app in 48 hours</p>
+                                    <a href="#" class="btn">View Details</a>
+                                </div>
+                            </div>
+                            <div class="portfolio-item">
+                                <img src="https://via.placeholder.com/300x200" alt="Hackathon 2">
+                                <div class="item-overlay">
+                                    <h3>Android Jam 2022</h3>
+                                    <p>Created an accessibility-focused application</p>
+                                    <a href="#" class="btn">View Details</a>
+                                </div>
+                            </div>
+                            <div class="portfolio-item">
+                                <img src="https://via.placeholder.com/300x200" alt="Hackathon 3">
+                                <div class="item-overlay">
+                                    <h3>HackMobile 2021</h3>
+                                    <p>Built a mental health support app for college students</p>
+                                    <a href="#" class="btn">View Details</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="tab-pane" id="courses">
+                        <div class="courses-list">
+                            <a href="https://www.credly.com/badges/8cdd16ca-00b1-4199-b6d9-d3b8e5300b47" target="_blank" class="course-link">
+                            <div class="course-item">
+                                <div class="course-icon">
+                                    <i class="fas fa-certificate"></i>
+                                </div>
+                                <div class="course-details">
+                                    <h3>IBM Data Science Professional Certificate                                    </h3>
+                                    <p class="course-provider">Coursera</p>
+                                    <p>Issued February 05, 2023</p>
+                                </div>
+                            </div>
+                            </a>
+                            <a href="https://www.coursera.org/account/accomplishments/certificate/CVQC7HKVKVQP" target="_blank" class="course-link">
+                                <div class="course-item">
+                                    <div class="course-icon">
+                                        <i class="fas fa-certificate"></i>
+                                    </div>
+                                    <div class="course-details">
+                                        <h3>Machine Learning</h3>
+                                        <p class="course-provider">Coursera</p>
+                                        <p>Issued May 2021 - Credential ID CVQC7HKVKVQP</p>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="https://www.coursera.org/account/accomplishments/specialization/certificate/75FEKZBYJRB9" target="_blank" class="course-link">
+                            <div class="course-item">
+                                <div class="course-icon">
+                                    <i class="fas fa-certificate"></i>
+                                </div>
+                                <div class="course-details">
+                                    <h3>Deep Learning Specialization</h3>
+                                    <p class="course-provider">Coursera</p>
+                                    <p>Issued Nov 2021 - Credential ID 75FEKZBYJRB9</p>
+                                </div>
+                            </div>
+                            </a>
+                            <a href="https://www.coursera.org/account/accomplishments/specialization/certificate/LJT2S4PVGEU6" target="_blank" class="course-link">
+                            <div class="course-item">
+                                <div class="course-icon">
+                                    <i class="fas fa-certificate"></i>
+                                </div>
+                                <div class="course-details">
+                                    <h3>
+                                        DeepLearning.AI TensorFlow Developer Specialization</h3>
+                                    <p class="course-provider">Coursera</p>
+                                    <p>Issued Mar 2022 - Credential ID LJT2S4PVGEU6</p>
+                                </div>
+                            </div>
+                            </a>    
+                        </div>
+                    </div>
+                    
+                    <div class="tab-pane" id="events">
+                        <div class="events-list">
+                            <div class="event-item">
+                                <div class="event-date">
+                                    <span class="month">MAY</span>
+                                    <span class="year">2023</span>
+                                </div>
+                                <div class="event-details">
+                                    <h3>Google I/O Extended</h3>
+                                    <p class="event-location">San Francisco, CA</p>
+                                    <p>Attended the extended conference, participated in workshops on Material You and Jetpack Compose.</p>
+                                </div>
+                            </div>
+                            <div class="event-item">
+                                <div class="event-date">
+                                    <span class="month">NOV</span>
+                                    <span class="year">2022</span>
+                                </div>
+                                <div class="event-details">
+                                    <h3>Android Dev Summit</h3>
+                                    <p class="event-location">Mountain View, CA</p>
+                                    <p>Participated in technical sessions and networking events focused on the latest Android development trends.</p>
+                                </div>
+                            </div>
+                            <div class="event-item">
+                                <div class="event-date">
+                                    <span class="month">JUL</span>
+                                    <span class="year">2022</span>
+                                </div>
+                                <div class="event-details">
+                                    <h3>Kotlin Conference</h3>
+                                    <p class="event-location">Berlin, Germany</p>
+                                    <p>Attended talks on Kotlin coroutines, flow, and multiplatform development.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-container">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <p>pathrinarayananmdu@gmail.com</p>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <p>+91 9790061191</p>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <p>Madurai, Tamil Nadu, India</p>
+                    </div>
+                    <div class="social-links">
+                        <a href="https://www.linkedin.com/in/pathrinarayanan/" class="social-link"><i class="fab fa-linkedin" target="_blank"></i></a>
+                        <a href="https://github.com/Pathrinarayanan" class="social-link"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form>
+                        <div class="form-group">
+                            <input type="text" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" placeholder="Subject" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea placeholder="Your Message" required></textarea>
+                        </div>
+                        <button type="submit" class="btn primary-btn">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Android Developer Portfolio. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Project Modal -->
+    <div class="project-modal" id="projectModal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div class="modal-body">
+                <!-- Xrosstalk Project Details -->
+                <div class="project-details" id="xrosstalk-details">
+                    <h2>Xrosstalk - Android Real time Chatting Application</h2>
+                    <div class="project-meta">
+                        <span class="project-links">
+                            <a href="https://github.com/Pathrinarayanan/chatapp" target="_blank" class="project-link"><i class="fab fa-github"></i> GitHub Repository</a>
+                        </span>
+                    </div>
+                    <div class="project-meta">
+                        <span class="project-duration">Nov 2021 - Jun 2022</span>
+                        <span class="project-association">Associated with Thiagarajar College of Engineering</span>
+                    </div>
+                    <div class="project-screenshot">
+                        <img src ="assets/xrosstalk.png" alt="Xrosstalk Screenshot">
+                    </div>
+                    <div class="project-description">
+                        <p>This application build with android studio with firebase as a backend for Real time synchronization of the messages. This application includes emotion based chatting so that the user can chat with user with their preferred emotions. This application is currently deployed on playstore.</p>
+                    </div>
+                    <div class="project-skills">
+                        <h3>Skills</h3>
+                        <ul class="skills-list">
+                            <li>Firebase</li>
+                            <li>Android Studio</li>
+                            <li>Java</li>
+                            <li>Android</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <!-- Food Delivery App Project Details -->
+                <div class="project-details" id="fooddelivery-details">
+                    <h2>Full-Stack Food Delivery Android App</h2>
+                    <div class="project-meta">
+                        <span class="project-links">
+                            <a href="https://github.com/yourusername/food-delivery-app" target="_blank" class="project-link"><i class="fab fa-github"></i> GitHub Repository</a>
+                            <a href="https://youtube.com/shorts/NlXgqlpsCNU" target="_blank" class="project-link"><i class="fab fa-youtube"></i> Demo Video</a>
+                        </span>
+                    </div>
+                    <div class="project-screenshot">
+                        <img src="assets/soru_time.jpg" alt="Food Delivery App Screenshot" style="width:100%;">
+                    </div>
+                    <div class="project-description">
+                        <p>A complete full-stack food delivery app built with Kotlin and Jetpack Compose, integrating Firebase Authentication, API handling, state management, and Clean Architecture to deliver a seamless eCommerce experience.</p>
+                        
+                        <h3>Features</h3>
+                        <ul class="features-list">
+                            <li><strong>Authentication</strong> – Secure login/signup with Firebase</li>
+                            <li><strong>API Integration</strong> – Fetch real-time restaurant data using Retrofit</li>
+                            <li><strong>Wishlist & Cart Flow</strong> – Efficient state management for smooth UI updates</li>
+                            <li><strong>Order & Checkout Flow</strong> – Seamless transaction process</li>
+                            <li><strong>Push Notifications</strong> – Real-time order updates</li>
+                            <li><strong>Dagger Hilt</strong> – Modular and scalable dependency injection</li>
+                            <li><strong>Clean Architecture</strong> – Maintainable and well-structured codebase</li>
+                        </ul>
+                    </div>
+                    <div class="project-skills">
+                        <h3>Tech Stack</h3>
+                        <ul class="skills-list">
+                            <li>Kotlin</li>
+                            <li>Jetpack Compose</li>
+                            <li>Firebase</li>
+                            <li>Retrofit</li>
+                            <li>Dagger Hilt</li>
+                            <li>ViewModel</li>
+                            <li>StateFlow</li>
+                            <li>Room Database</li>
+                            <li>Navigation Component</li>
+                            <li>Coroutines & Flow</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <!-- Weather App Project Details -->
+                <div class="project-details" id="weatherapp-details">
+                    <h2>Modern Weather App</h2>
+                    <div class="project-meta">
+                        <span class="project-links">
+                            <a href="https://github.com/Pathrinarayanan/weatherApp" target="_blank" class="project-link"><i class="fab fa-github"></i> GitHub Repository</a>
+                            <a href="https://youtube.com/shorts/O9rHEk3YTeA" target="_blank" class="project-link"><i class="fab fa-youtube"></i> Demo Video</a>
+                        </span>
+                    </div>
+                    <div class="project-screenshot"  style="display: flex; justify-content: center; align-items: center;">
+                        <img src="https://static.wikia.nocookie.net/ipod/images/d/d6/Weather_iOS_15.png/revision/latest?cb=20220611140027" alt="Weather App Screenshot" style="height: 400px; width:60%; ">
+                    </div>
+                    <div class="project-description">
+                        <p>A dynamic weather app built with Kotlin and Jetpack Compose, integrating real-time weather updates, API handling, and smooth animations for a modern UI experience.</p>
+                        
+                        <h3>Features</h3>
+                        <ul class="features-list">
+                            <li><strong>Kotlin + Jetpack Compose</strong> – Modern UI toolkit for Android</li>
+                            <li><strong>MVVM Architecture</strong> – Well-structured and maintainable code</li>
+                            <li><strong>Retrofit</strong> – API handling for real-time weather data</li>
+                            <li><strong>MotionLayout</strong> – Smooth and interactive UI animations</li>
+                            <li><strong>Live Weather Updates</strong> – Dynamic UI adapts based on weather conditions</li>
+                        </ul>
+                    </div>
+                    <div class="project-skills">
+                        <h3>Tech Stack</h3>
+                        <ul class="skills-list">
+                            <li>Kotlin</li>
+                            <li>Jetpack Compose</li>
+                            <li>Retrofit</li>
+                            <li>MotionLayout</li>
+                            <li>ViewModel</li>
+                            <li>LiveData</li>
+                            <li>Coroutines</li>
+                            <li>Flow</li>
+                            <li>Navigation Component</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <!-- Reconnect Project Details -->
+                <div class="project-details" id="reconnect-details">
+                    <h2>Reconnect - Contact Management App</h2>
+                    <div class="project-meta">
+                        <span class="project-links">
+                            <a href="https://youtube.com/shorts/-rU1PKZ7WjU" target="_blank" class="project-link"><i class="fab fa-youtube"></i> Demo Video</a>
+                        </span>
+                    </div>
+                    <div class="project-meta">
+                        <span class="project-association">In collaboration with Thiyaga B</span>
+                    </div>
+                    <div class="project-screenshot" style="display: flex; justify-content: center; align-items: center;">
+                        <img src="assets/reconnect_icon.png" alt="Reconnect App Screenshot" style="height: 350px; width:60%;">
+                    </div>
+                    <div class="project-description">
+                        <p>Too many contacts, but not enough real connections? Over time, our contact lists get cluttered with old numbers, forgotten names, and people we once knew but never reached out to again. Manually cleaning it up? Too much effort.</p>
+                        
+                        <p>That's why I built Reconnect—an interactive app that helps you organize, clean, and reconnect with meaningful contacts, all with a Tinder-style swipe UI.</p>
+                        
+                        <h3>Features</h3>
+                        <ul class="features-list">
+                            <li><strong>Swipe Right</strong> – Keep contacts you're interested in maintaining</li>
+                            <li><strong>Swipe Left</strong> – Remove contacts you no longer need</li>
+                            <li><strong>Swipe Up</strong> – Mark friends you want to catch up with soon</li>
+                            <li><strong>Bulk Organization</strong> – Group similar contacts and delete outdated ones in bulk</li>
+                            <li><strong>Memory Sharing</strong> – Makes reaching out after a long time feel more natural</li>
+                            <li><strong>Contact Integration</strong> – Seamlessly integrated with your local contacts list</li>
+                        </ul>
+                    </div>
+                    <div class="project-skills">
+                        <h3>Tech Stack</h3>
+                        <ul class="skills-list">
+                            <li>Kotlin</li>
+                            <li>Android SDK</li>
+                            <li>MVVM Architecture</li>
+                            <li>Room Database</li>
+                            <li>Contacts API</li>
+                            <li>Material Design</li>
+                            <li>Custom Animations</li>
+                            <li>Coroutines</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <!-- Goal Tracker Project Details -->
+                <div class="project-details" id="goaltracker-details">
+                    <h2>Goal Tracker App with Firebase</h2>
+                    <div class="project-meta">
+                        <span class="project-links">
+                            <a href="https://github.com/Pathrinarayanan/goal" target="_blank" class="project-link"><i class="fab fa-github"></i> GitHub Repository</a>
+                            <a href="https://youtube.com/shorts/ZJXrwFcUXlM" target="_blank" class="project-link"><i class="fab fa-youtube"></i> Demo Video</a>
+                        </span>
+                    </div>
+                    <div class="project-screenshot" style="display: flex; justify-content: center; align-items: center;">
+                        <img src="assets/goal_logo.png" alt="Goal Tracker App Screenshot" style="height: 350px; width:60%;">
+                    </div>
+                    <div class="project-description">
+                        <p>"A goal properly set is halfway reached" – Zig Ziglar</p>
+                        
+                        <p>I wanted a simple way to track my goals, so I built a Goal Tracker App while learning more about Android development. Along the way, I got to explore:</p>
+                        
+                        <h3>Features</h3>
+                        <ul class="features-list">
+                            <li><strong>Firebase Authentication</strong> – For user sign-in</li>
+                            <li><strong>Firestore Database</strong> – To store and manage goals</li>
+                            <li><strong>Jetpack Compose</strong> – For a clean and simple UI</li>
+                            <li><strong>State Management</strong> – For a smooth user experience</li>
+                        </ul>
+                        
+                        <h3>Why This Project?</h3>
+                        <p>Sometimes, it's hard to stay consistent with goals. I thought having an app that tracks progress and shows streaks might help keep the motivation going.</p>
+                        
+                        <h3>How It Can Be Useful</h3>
+                        <p>If you're trying to build habits or stay on track with your goals, this app might help. The daily check-ins and calendar streaks make it easier to stay consistent and see progress over time.</p>
+                    </div>
+                    <div class="project-skills">
+                        <h3>Tech Stack</h3>
+                        <ul class="skills-list">
+                            <li>Kotlin</li>
+                            <li>Jetpack Compose</li>
+                            <li>Firebase Authentication</li>
+                            <li>Firestore Database</li>
+                            <li>MVVM Architecture</li>
+                            <li>Material Design</li>
+                            <li>Navigation Component</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- EmailJS library -->
+    <script type="text/javascript" src="https://unpkg.com/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function() {
+            // EmailJS initialization
+            window.addEventListener('load', function() {
+                try {
+                    emailjs.init("DGqg8o3PyLrUaJZN2");
+                    console.log("EmailJS initialized successfully with version:", emailjs.SDK_VERSION);
+                    window.emailjsLoaded = true;
+                } catch (error) {
+                    console.error("Error initializing EmailJS:", error);
+                }
+            });
+        })();
+    </script>
+
+    <script src="script.js"></script>
+</body>
+</html> 
